@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+  font-size: 1.2rem;
+
+  img {
+    width: 200px;
+  }
+
+  .itens {
+    display: flex;
+    gap: 25px;
+  }
+
+  .botao {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #be580f;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* ===== HERO ===== */
+.hero {
+  width: 100%;
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/Background.jfif");
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+
+  h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 4rem;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 1rem;
+
+    .destaque-palavra {
+      color: #be580f;
+    }
+  }
+
+  p {
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+    padding: 1rem 4rem;
+    text-align: center;
+  }
+
+  .pesquisa {
+    display: flex;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.363));
+    width: 60%;
+    height: 6rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 14px;
+    position: relative;
+    z-index: 1;
+
+    .barra-pesquisa {
+      input {
+        margin-left: 4rem;
+        width: 150%;
+        height: 4.5rem;
+        border-radius: 14px;
+        font-size: 2rem;
+        background-color: white;
+
+        &::placeholder {
+          font-size: 2rem;
+          text-align: center;
+        }
+      }
+    }
+
+    .botao-pesquisa {
+      button {
+        padding: 4px;
+        width: 18rem;
+        height: 3rem;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+        border-radius: 14px;
+        background-color: #be580f;
+      }
+    }
+  }
+}
+
+/* ===== BOOKS ===== */
+.books {
+  font-size: 2rem;
+  background-color: #f7f6f5;
+  height: 66rem;
+
+  .books_top {
+    margin-bottom: 10vh;
+    padding: 3rem 10rem 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: #be580f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+
+  .books_apresentation {
+    display: flex;
+    width: 82vw;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    .book_description {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 0.1rem;
+      font-size: 1.5rem;
+      margin-bottom: 4rem;
+      font-weight: 600;
+
+      .autor {
+        color: gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+
+    .livros {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 19%;
+      padding: 2rem;
+      font-size: 2rem;
+      text-align: center;
+      background-color: white;
+      border-radius: 1rem;
+
+      img {
+        width: 290px;
+        height: 390px;
+        padding: 30px;
+        border-radius: 1rem;
+      }
+
+      .alugar {
+        display: flex;
+        justify-content: center;
+
+        a {
+          padding: 6% 100%;
+          color: #be580f;
+          text-decoration: none;
+          font-size: 1.8rem;
+          font-weight: bold;
+          background-color: #be580f4a;
+          border-radius: 0.4rem;
+        }
+      }
+    }
+  }
+}
+
+#events {
+  height: 40vh;
+  padding: 7rem 15rem;
+  background-color: #f5eae0;
+
+  .events_topo {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    .title {
+      p {
+        color: #be580f;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .calendar {
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 0.6rem 1.4rem;
+        background-color: white;
+        border-radius: 0.4rem;
+      }
+    }
+  }
+
+  .section_events {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+
+    .card_events {
+      background-color: white;
+      width: 25%;
+      padding: 1.4rem;
+      border-radius: 0.5rem;
+
+      .card_top {
+        display: flex;
+        justify-content: space-between;
+
+        .date {
+          background-color: #be580f;
+          padding: 0.8rem;
+          width: 2rem;
+          border-radius: 0.6rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-weight: bold;
+          margin: 0 0 1rem 0;
+        }
+
+        .icon_calendar img {
+          width: 2rem;
+          height: 2rem;
+          opacity: 30%;
+        }
+      }
+
+      .event_description {
+        color: gray;
+        margin-bottom: 2rem;
+        width: 85%;
+      }
+
+      a {
+        text-decoration: none;
+        color: #d17634;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.services {
+  height: 50vh;
+
+  .titulo {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      color: gray;
+      font-size: 1.5rem;
+    }
+  }
+
+  .container_service {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card_service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    gap: 1.5rem;
+    padding: 2rem;
+
+    img {
+      width: 4.2rem;
+      height: 4.2rem;
+    }
+  }
+}
+
+.rodape {
+  padding: 5rem 3rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-around;
+  background-color: #302008;
+  color: white;
+
+  .mission {
+    width: 30rem;
+    justify-content: start;
+
+    img {
+      width: 300px;
+      height: 10rem;
+    }
+
+    p {
+      padding: 0 1.5rem;
+      color: rgb(197, 192, 192);
+    }
+  }
+
+  .contact {
+    div {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin: 0.9rem;
+      color: rgb(197, 192, 192);
+    }
+  }
+
+  .funcionamento {
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.5rem;
+      color: rgb(197, 192, 192);
+
+      .hora {
+        color: cornsilk;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      text-decoration: none;
+      margin: 0.5rem;
+      color: rgb(197, 192, 192);
+    }
+  }
+}
