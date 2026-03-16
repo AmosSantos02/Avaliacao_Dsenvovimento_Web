@@ -94,7 +94,7 @@
     .barra-pesquisa {
       input {
         margin-left: 4rem;
-        width: 150%;
+        width: 240%;
         height: 4.5rem;
         border-radius: 14px;
         font-size: 2rem;
@@ -352,6 +352,10 @@
       gap: 2rem;
       margin: 0.9rem;
       color: rgb(197, 192, 192);
+      
+      .svg{
+        width: 30px;
+      }
     }
   }
 
