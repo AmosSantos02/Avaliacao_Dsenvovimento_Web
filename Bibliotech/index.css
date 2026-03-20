@@ -93,12 +93,12 @@
 
     .barra-pesquisa {
       input {
-        margin-left: 4rem;
-        width: 240%;
+        margin-left: 4rem;        width: 150%;
         height: 4.5rem;
         border-radius: 14px;
         font-size: 2rem;
         background-color: white;
+        text-align: center;
 
         &::placeholder {
           font-size: 2rem;
@@ -281,7 +281,8 @@
 }
 
 .services {
-  height: 50vh;
+  height: 45vh;
+  margin: 3rem;
 
   .titulo {
     margin-top: 4rem;
@@ -301,12 +302,12 @@
   }
 
   .container_service {
-    margin-top: 6rem;
     display: flex;
     justify-content: center;
   }
 
   .card_service {
+    margin: 2rem 3rem ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -334,14 +335,28 @@
     width: 30rem;
     justify-content: start;
 
-    img {
-      width: 300px;
-      height: 10rem;
+    .logo_rodape {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      img {
+        width: 3rem;
+        height: 3rem;
+      }
+      h2{
+        font-weight: 200;
+      }
     }
 
     p {
-      padding: 0 1.5rem;
       color: rgb(197, 192, 192);
+    }
+
+    .midia svg {
+      margin:  .7rem .5rem;
+      background-color: #d17634;
+      padding: .5rem;
+      border-radius: 4rem;
     }
   }
 
@@ -367,7 +382,7 @@
       color: rgb(197, 192, 192);
 
       .hora {
-        color: cornsilk;
+        color: rgb(255, 255, 255);
       }
     }
   }
