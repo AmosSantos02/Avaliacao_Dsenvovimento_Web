@@ -168,6 +168,7 @@ hr {
       display: flex;
       align-items: center;
       margin-bottom: 2rem;
+
       svg {
         stroke: #337dff !important;
         width: 2rem;
@@ -177,10 +178,12 @@ hr {
 
     .emprego {
       width: 100%;
+
       .empresa_periodo {
         display: flex;
         justify-content: space-between;
         margin-bottom: 0.5rem;
+
         .empresa {
           color: #337dff;
           font-size: 1.5rem;
@@ -192,8 +195,8 @@ hr {
       }
 
       .detalhes_emprego {
-        margin:1rem 0 2rem 1rem;
-        
+        margin: 1rem 0 2rem 1rem;
+
         .cargo_periodo {
           display: flex;
           justify-content: space-between;
@@ -204,18 +207,83 @@ hr {
           }
         }
 
-        .detalhes_cargo{
+        .detalhes_cargo {
           margin-bottom: .5rem;
+        }
+      }
+    }
+  }
+
+  svg {
+    stroke: #337dff !important;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .formacao {
+    background-color: rgba(0, 255, 34, 0.1);
+    width: 35%;
+    padding: 2rem;
+
+    .titulo {
+      gap: 0.7rem;
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .curso {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      .detalhes_curso {
+        margin-left: 1rem;
+        .status {
+          display: flex;
+          flex-direction: row;
+          gap: 2rem;
+
+          p {
+            font-size: .8rem;
+            background-color: #0070cc;
+            padding: .1rem .5rem;
+            margin: .2rem 0;
+
+          }
         }
       }
     }
   }
 }
 
-.formacao {
-  background-color: rgba(0, 255, 34, 0.1);
+/* Linguagens */
+.container-linguagem {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 
-  width: 35%;
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  .linguagens {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .linguagens img {
+    width: 100px;
+  }
+
+  .nome-linguagem {
+    font-family:
+      "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
 }
 
 /* Projetos */
@@ -302,32 +370,3 @@ hr {
   border-radius: 50%;
 }
 
-/* Linguagens */
-.container-linguagem {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-
-  h1 {
-    margin-bottom: 2rem;
-  }
-
-  .linguagens {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  .linguagens img {
-    width: 100px;
-  }
-
-  .nome-linguagem {
-    font-family:
-      "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    font-weight: bold;
-    font-size: 1.6rem;
-  }
-}
