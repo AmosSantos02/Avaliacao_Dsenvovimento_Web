@@ -1,322 +1,344 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amós Santos | Dev</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
 
-  <body>
-    <!-- MENU -->
-    <nav id="menu">
-      <p class="logo">
-        <a href="#">AmósSantos<span class="logo-destaque">.dev</span></a>
-      </p>
-      <div class="opcoes">
-        <a href="#sobre-mim">Sobre mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amós Santos | Dev</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <!-- MENU -->
+  <nav id="menu">
+    <p class="logo">
+      <a href="#">AmósSantos<span class="logo-destaque">.dev</span></a>
+    </p>
+    <div class="opcoes">
+      <a href="#sobre-mim">Sobre mim</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="apresentacao">
+    <h1 class="apresentacao-frase">
+      Futuro <span class="destaque-frase">Desenvolvedor</span>, especialista
+      em transformar <span class="destaque-frase">ideias</span> em
+      <span class="destaque-frase">realidade</span>
+      através de código.
+    </h1>
+    <a href="#projetos" class="btn-cta">Ver meus projetos ↓</a>
+  </section>
+
+  <!-- SOBRE MIM -->
+  <section id="sobre-mim">
+    <div class="foto">
+      <img src="/Projeto portifólio/img/MF.jpg" alt="Foto de Amós" />
+    </div>
+    <div class="dados_sm">
+      <div class="location">
+        <i data-lucide="map-pin"></i>
+        <p>SOROCABA, BRASIL</p>
       </div>
-    </nav>
+      <h1>Amós Santos</h1>
+      <p>Transformando conhecimento acadêmico em impacto no mundo real.</p>
+      <p>Focado na construção de bases técnicas sólidas para o desenvolvimento.</p>
+    </div>
+  </section>
 
-    <!-- HERO -->
-    <section class="apresentacao">
-      <h1 class="apresentacao-frase">
-        Futuro <span class="destaque-frase">Desenvolvedor</span>, especialista
-        em transformar <span class="destaque-frase">ideias</span> em
-        <span class="destaque-frase">realidade</span>
-        através de código.
-      </h1>
-      <a href="#projetos" class="btn-cta">Ver meus projetos ↓</a>
-    </section>
-
-    <!-- SOBRE MIM -->
-    <section id="sobre-mim">
-      <div class="foto">
-        <img src="../img/MF.jpg" alt="Foto de Amós" />
+  <!-- EXPERIÊNCIA E FORMAÇÃO -->
+  <section class="experiencia_formacao">
+    <div class="experiencia card-secao">
+      <div class="titulo-secao">
+        <i data-lucide="briefcase-business"></i>
+        <h2>Experiência</h2>
       </div>
-      <div class="sm-escrita">
-        <h2>Sobre mim</h2>
-        <p class="espaco-curto">
-          Me chamo <span class="destaque-frase-menor">Amós</span>, sou estudante
-          do
-          <span class="destaque-frase-menor"
-            >Curso Superior de Análise e Desenvolvimento de Sistemas</span
-          >, atualmente no 1º Semestre.
-        </p>
-        <p class="espaco-curto">
-          Ainda não atuo diretamente na área, mas aplico os conhecimentos
-          adquiridos na faculdade no meu trabalho na
-          <span class="eduzz">Eduzz</span>.
-        </p>
-        <p class="espaco-curto">
-          Paralelamente, estudo em cursos externos para aprofundar em
-          <span class="destaque-frase-menor">lógica de programação</span> e em
-          breve mergulhar na linguagem
-          <span class="destaque-frase-menor">Java</span>.
-        </p>
-      </div>
-    </section>
 
-    <!-- LINGUAGENS -->
-    <section class="container-linguagem">
-      <h2>Tecnologias que conheço</h2>
-      <div class="linguagens">
-        <div class="linguagem-item">
-          <img src="../Logos/html.png" alt="HTML" />
-          <p class="nome-linguagem">HTML</p>
+      <div class="emprego">
+        <div class="empresa_periodo">
+          <h3 class="empresa">Eduzz</h3>
+          <p class="periodo-geral">Mar/2023 - Atualmente</p>
         </div>
-        <div class="linguagem-item">
-          <img src="../Logos/css.png" alt="CSS" />
-          <p class="nome-linguagem">CSS</p>
-        </div>
-      </div>
-    </section>
 
-    <!-- PROJETOS -->
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <p class="projetos-subtitulo">
-        Desenvolvidos durante o curso de Lógica de Programação na Alura
-      </p>
-
-      <div class="continer_projetos">
-        <div
-          class="card_projeto"
-          data-titulo="🎲 AluGames"
-          data-img="../img/projetos/AluguelBoardGames.png"
-          data-descricao="Sistema de gerenciamento de aluguel de boardgames. O usuário pode alternar o status de cada jogo entre disponível e alugado, com atualização visual automática do botão e da imagem. Desenvolvido com manipulação de DOM e lógica de estados em JavaScript — um dos primeiros contatos com interatividade real no browser."
-          data-github="https://github.com/AmosSantos02/Projetos-Alura---Logica-de-programa-o-com-JS/tree/main/alugames"
-        >
-          <img
-            class="card_projetos_img"
-            src="../img/projetos/AluguelBoardGames.png"
-            alt="AluGames"
-          />
-          <div class="card_body">
-            <h3>🎲 AluGames</h3>
-            <p class="card_projetos_descricao">
-              Sistema de gerenciamento de aluguel de boardgames com alternância
-              de status e atualização visual automática via manipulação de DOM.
-            </p>
-            <div class="card_projetos_tecnologias">
-              <img
-                src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"
-                alt="HTML5"
-              />
-              <img
-                src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"
-                alt="CSS3"
-              />
-              <img
-                src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"
-                alt="JS"
-              />
-            </div>
-            <span class="card_btn">Ver detalhes →</span>
+        <div class="detalhes_emprego">
+          <div class="cargo_periodo">
+            <p class="cargo">Consultor Técnico Black PL</p>
+            <p class="periodo">Jul/2025 - Atualmente</p>
           </div>
+          <p class="detalhes_cargo">
+            Atuo no auxílio técnico de clientes de alto porte do mercado
+            digital (faturamento mínimo de R$1.000.000,00), auxiliando na
+            criação e configuração de produtos digitais com base em
+            estratégias personalizadas.
+          </p>
+          <p class="detalhes_cargo">
+            Realizo diagnóstico e resolução de problemas técnicos,
+            apresentações técnicas dos produtos da plataforma e integração com
+            APIs da Eduzz, aplicando diretamente conhecimentos acadêmicos em
+            um ambiente profissional.
+          </p>
         </div>
 
-        <div
-          class="card_projeto"
-          data-titulo="🎁 Amigo Secreto"
-          data-img="../img/projetos/AmigoSecreto.png"
-          data-descricao="Aplicação para organizar sorteios de amigo secreto. O usuário adiciona participantes e o sistema embaralha a lista usando o algoritmo Fisher-Yates para gerar os pares de forma aleatória e justa. Conta com validações para evitar nomes duplicados e a possibilidade de reiniciar o sorteio a qualquer momento."
-          data-github="https://github.com/AmosSantos02/Projetos-Alura---Logica-de-programa-o-com-JS/tree/main/amigo-secreto"
-        >
-          <img
-            class="card_projetos_img"
-            src="../img/projetos/AmigoSecreto.png"
-            alt="Amigo Secreto"
-          />
-          <div class="card_body">
-            <h3>🎁 Amigo Secreto</h3>
-            <p class="card_projetos_descricao">
-              Sorteador com algoritmo Fisher-Yates para embaralhamento justo,
-              validação de duplicatas e opção de reiniciar a qualquer momento.
-            </p>
-            <div class="card_projetos_tecnologias">
-              <img
-                src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"
-                alt="HTML5"
-              />
-              <img
-                src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"
-                alt="CSS3"
-              />
-              <img
-                src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"
-                alt="JS"
-              />
-            </div>
-            <span class="card_btn">Ver detalhes →</span>
+        <div class="detalhes_emprego">
+          <div class="cargo_periodo">
+            <p class="cargo">Consultor Técnico Pro JR</p>
+            <p class="periodo">Mar/2023 - Jul/2025</p>
           </div>
-        </div>
-
-        <div
-          class="card_projeto"
-          data-titulo="🛒 Carrinho de Compras"
-          data-img="../img/projetos/CarrinhoDeCompras.png"
-          data-descricao="Simulação de um carrinho de compras interativo. O usuário seleciona produtos, define a quantidade e o sistema calcula automaticamente o subtotal e o valor total da compra em tempo real, com inserção dinâmica de itens na lista e opção de limpar o carrinho por completo."
-          data-github="https://github.com/AmosSantos02/Projetos-Alura---Logica-de-programa-o-com-JS/tree/main/carrinho-compras"
-        >
-          <img
-            class="card_projetos_img"
-            src="../img/projetos/CarrinhoDeCompras.png"
-            alt="Carrinho de Compras"
-          />
-          <div class="card_body">
-            <h3>🛒 Carrinho de Compras</h3>
-            <p class="card_projetos_descricao">
-              Carrinho interativo que calcula subtotal e total em tempo real
-              conforme o usuário adiciona produtos e quantidades.
-            </p>
-            <div class="card_projetos_tecnologias">
-              <img
-                src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"
-                alt="HTML5"
-              />
-              <img
-                src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"
-                alt="CSS3"
-              />
-              <img
-                src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"
-                alt="JS"
-              />
-            </div>
-            <span class="card_btn">Ver detalhes →</span>
-          </div>
-        </div>
-
-        <div
-          class="card_projeto"
-          data-titulo="🎟️ Compra de Ingressos"
-          data-img="../img/projetos/Ingressos.png"
-          data-descricao="Sistema de venda de ingressos com controle de estoque em tempo real. O usuário escolhe o tipo de ingresso (pista, cadeira superior ou inferior) e a quantidade desejada. O sistema verifica a disponibilidade e, em caso positivo, subtrai do estoque e atualiza a interface imediatamente."
-          data-github="https://github.com/AmosSantos02/Projetos-Alura---Logica-de-programa-o-com-JS/tree/main/ingresso"
-        >
-          <img
-            class="card_projetos_img"
-            src="../img/projetos/Ingressos.png"
-            alt="Compra de Ingressos"
-          />
-          <div class="card_body">
-            <h3>🎟️ Compra de Ingressos</h3>
-            <p class="card_projetos_descricao">
-              Sistema de venda com controle de estoque em tempo real. Verifica
-              disponibilidade e atualiza automaticamente após cada compra.
-            </p>
-            <div class="card_projetos_tecnologias">
-              <img
-                src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"
-                alt="HTML5"
-              />
-              <img
-                src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"
-                alt="CSS3"
-              />
-              <img
-                src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"
-                alt="JS"
-              />
-            </div>
-            <span class="card_btn">Ver detalhes →</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MODAL -->
-    <div id="modal-overlay" class="modal-overlay">
-      <div class="modal-box">
-        <button class="modal-fechar" id="modal-fechar">✕</button>
-        <img class="modal-img" id="modal-img" src="" alt="" />
-        <div class="modal-conteudo">
-          <h2 class="modal-titulo" id="modal-titulo"></h2>
-          <p class="modal-descricao" id="modal-descricao"></p>
-          <div class="modal-tecnologias">
-            <img
-              src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"
-              alt="HTML5"
-            />
-            <img
-              src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"
-              alt="CSS3"
-            />
-            <img
-              src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"
-              alt="JS"
-            />
-          </div>
-          <a class="modal-btn" id="modal-btn" href="#" target="_blank"
-            >Ver no GitHub →</a
-          >
+          <p class="detalhes_cargo">
+            Atuei no suporte técnico de clientes em fase de crescimento no
+            mercado digital (faturamento mínimo de R$100.000,00), auxiliando
+            na configuração de produtos, resolução de problemas técnicos e
+            orientação estratégica sobre os recursos da plataforma.
+          </p>
         </div>
       </div>
     </div>
 
-    <!-- CONTATO -->
-    <section id="contato">
-      <h2>Vamos conversar?</h2>
-      <p class="contato-sub">
-        Estou aberto a oportunidades, projetos e conexões na área da tecnologia.
-      </p>
-      <div class="redes">
-        <a href="https://github.com/AmosSantos02" target="_blank" class="midia">
-          <img src="../img/Githublogo.jpg" alt="GitHub" />
-          <p>GitHub</p>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/am%C3%B3s-santos-841b32259/"
-          target="_blank"
-          class="midia"
-        >
-          <img src="../img/LinkedInlogo.png" alt="LinkedIn" />
-          <p>LinkedIn</p>
-        </a>
+    <div class="formacao card-secao">
+      <div class="titulo-secao">
+        <i data-lucide="graduation-cap"></i>
+        <h2>Formação</h2>
       </div>
-    </section>
 
-    <footer>
-      <p>Feito com 💙 por Amós Santos</p>
-    </footer>
+      <div class="curso">
+        <h3>Análise e Desenvolvimento de Sistemas — SENAI</h3>
+        <div class="detalhes_curso">
+          <div class="status-badges">
+            <span class="badge">EM ANDAMENTO</span>
+            <span class="badge">1° SEMESTRE</span>
+          </div>
+          <p>Construindo a base teórica e prática necessária para a engenharia de software moderna.</p>
+        </div>
+      </div>
 
-    <script>
-      const cards = document.querySelectorAll(".card_projeto");
-      const overlay = document.getElementById("modal-overlay");
-      const btnFechar = document.getElementById("modal-fechar");
+      <div class="curso">
+        <h3>Carreira JAVA — Alura</h3>
+        <div class="detalhes_curso">
+          <div class="status-badges">
+            <span class="badge">EM ANDAMENTO</span>
+          </div>
+          <p>Formação em desenvolvimento Java pela Alura, abrangendo fundamentos da linguagem, programação orientada a
+            objetos, estruturas de dados e desenvolvimento de aplicações back-end modernas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      cards.forEach((card) => {
-        card.addEventListener("click", () => {
-          document.getElementById("modal-img").src = card.dataset.img;
-          document.getElementById("modal-img").alt = card.dataset.titulo;
-          document.getElementById("modal-titulo").textContent =
-            card.dataset.titulo;
-          document.getElementById("modal-descricao").textContent =
-            card.dataset.descricao;
-          document.getElementById("modal-btn").href = card.dataset.github;
+  <!-- HABILIDADES -->
+  <section class="container-linguagem">
+    <div class="habilidades-header">
+      <div class="titulo-secao">
+        <i data-lucide="square-terminal"></i>
+        <h2>Habilidades</h2>
+      </div>
+      <p class="habilidades-sub">Focando no domínio das tecnologias fundamentais da web para criar interfaces precisas e
+        responsivas.</p>
+    </div>
 
-          overlay.classList.add("ativo");
-          document.body.style.overflow = "hidden";
-        });
+    <div class="linguagens">
+      <div class="habilidade">
+        <img src="/Projeto portifólio/Logos/html.png" alt="HTML" />
+        <div class="habilidade_linguagem">
+          <p class="nome_linguagem">HTML</p>
+          <p class="habilidade_nivel">BEGINNER</p>
+        </div>
+      </div>
+
+      <div class="habilidade">
+        <img src="/Projeto portifólio/Logos/css.png" alt="CSS" />
+        <div class="habilidade_linguagem">
+          <p class="nome_linguagem">CSS</p>
+          <p class="habilidade_nivel">BEGINNER</p>
+        </div>
+      </div>
+
+      <div class="habilidade">
+        <img src="/Projeto portifólio/Logos/java.png" alt="Java" />
+        <div class="habilidade_linguagem">
+          <p class="nome_linguagem">JAVA</p>
+          <p class="habilidade_nivel">BEGINNER</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <p class="projetos-subtitulo">Desenvolvidos durante o curso de Lógica de Programação na Alura</p>
+
+    <div class="continer_projetos">
+      <div class="card_projeto" data-titulo="🎲 AluGames"
+        data-img="/Projeto portifólio/img/projetos/AluguelBoardGames.png"
+        data-descricao="Sistema de gerenciamento de aluguel de boardgames. O usuário pode alternar o status de cada jogo entre disponível e alugado, com atualização visual automática do botão e da imagem. Desenvolvido com manipulação de DOM e lógica de estados em JavaScript — um dos primeiros contatos com interatividade real no browser."
+        data-github="https://github.com/AmosSantos02/Projetos-Alura---Logica-de-programa-o-com-JS/tree/main/alugames">
+        <img class="card_projetos_img" src="/Projeto portifólio/img/projetos/AluguelBoardGames.png" alt="AluGames" />
+        <div class="card_body">
+          <h3>🎲 AluGames</h3>
+          <p class="card_projetos_descricao">
+            Sistema de gerenciamento de aluguel de boardgames com alternância
+            de status e atualização visual automática via manipulação de DOM.
+          </p>
+          <div class="card_projetos_tecnologias">
+            <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5" />
+            <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3" />
+            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"
+              alt="JS" />
+          </div>
+          <span class="card_btn">Ver detalhes →</span>
+        </div>
+      </div>
+
+      <div class="card_projeto" data-titulo="🎁 Amigo Secreto"
+        data-img="/Projeto portifólio/img/projetos/AmigoSecreto.png"
+        data-descricao="Aplicação para organizar sorteios de amigo secreto. O usuário adiciona participantes e o sistema embaralha a lista usando o algoritmo Fisher-Yates para gerar os pares de forma aleatória e justa. Conta com validações para evitar nomes duplicados e a possibilidade de reiniciar o sorteio a qualquer momento."
+        data-github="https://github.com/AmosSantos02/Projetos-Alura---Logica-de-programa-o-com-JS/tree/main/amigo-secreto">
+        <img class="card_projetos_img" src="/Projeto portifólio/img/projetos/AmigoSecreto.png" alt="Amigo Secreto" />
+        <div class="card_body">
+          <h3>🎁 Amigo Secreto</h3>
+          <p class="card_projetos_descricao">
+            Sorteador com algoritmo Fisher-Yates para embaralhamento justo,
+            validação de duplicatas e opção de reiniciar a qualquer momento.
+          </p>
+          <div class="card_projetos_tecnologias">
+            <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5" />
+            <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3" />
+            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"
+              alt="JS" />
+          </div>
+          <span class="card_btn">Ver detalhes →</span>
+        </div>
+      </div>
+
+      <div class="card_projeto" data-titulo="🛒 Carrinho de Compras"
+        data-img="/Projeto portifólio/img/projetos/CarrinhoDeCompras.png"
+        data-descricao="Simulação de um carrinho de compras interativo. O usuário seleciona produtos, define a quantidade e o sistema calcula automaticamente o subtotal e o valor total da compra em tempo real, com inserção dinâmica de itens na lista e opção de limpar o carrinho por completo."
+        data-github="https://github.com/AmosSantos02/Projetos-Alura---Logica-de-programa-o-com-JS/tree/main/carrinho-compras">
+        <img class="card_projetos_img" src="/Projeto portifólio/img/projetos/CarrinhoDeCompras.png"
+          alt="Carrinho de Compras" />
+        <div class="card_body">
+          <h3>🛒 Carrinho de Compras</h3>
+          <p class="card_projetos_descricao">
+            Carrinho interativo que calcula subtotal e total em tempo real
+            conforme o usuário adiciona produtos e quantidades.
+          </p>
+          <div class="card_projetos_tecnologias">
+            <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5" />
+            <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3" />
+            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"
+              alt="JS" />
+          </div>
+          <span class="card_btn">Ver detalhes →</span>
+        </div>
+      </div>
+
+      <div class="card_projeto" data-titulo="🎟️ Compra de Ingressos"
+        data-img="/Projeto portifólio/img/projetos/Ingressos.png"
+        data-descricao="Sistema de venda de ingressos com controle de estoque em tempo real. O usuário escolhe o tipo de ingresso (pista, cadeira superior ou inferior) e a quantidade desejada. O sistema verifica a disponibilidade e, em caso positivo, subtrai do estoque e atualiza a interface imediatamente."
+        data-github="https://github.com/AmosSantos02/Projetos-Alura---Logica-de-programa-o-com-JS/tree/main/ingresso">
+        <img class="card_projetos_img" src="/Projeto portifólio/img/projetos/Ingressos.png" alt="Compra de Ingressos" />
+        <div class="card_body">
+          <h3>🎟️ Compra de Ingressos</h3>
+          <p class="card_projetos_descricao">
+            Sistema de venda com controle de estoque em tempo real. Verifica
+            disponibilidade e atualiza automaticamente após cada compra.
+          </p>
+          <div class="card_projetos_tecnologias">
+            <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" alt="HTML5" />
+            <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" alt="CSS3" />
+            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"
+              alt="JS" />
+          </div>
+          <span class="card_btn">Ver detalhes →</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-fechar" id="modal-fechar">✕</button>
+      <img class="modal-img" id="modal-img" src="" alt="" />
+      <div class="modal-conteudo">
+        <h2 class="modal-titulo" id="modal-titulo"></h2>
+        <p class="modal-descricao" id="modal-descricao"></p>
+        <div class="modal-tecnologias">
+          <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"
+            alt="HTML5" />
+          <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"
+            alt="JS" />
+        </div>
+        <a class="modal-btn" id="modal-btn" href="#" target="_blank">Ver no GitHub →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <h2>Vamos conversar?</h2>
+    <p class="contato-sub">Estou aberto a oportunidades, projetos e conexões na área da tecnologia.</p>
+
+    <div class="contato-info">
+      <div class="contato-item">
+        <i data-lucide="mail"></i>
+        <span>amos.simoes123@hotmail.com</span>
+      </div>
+      <div class="contato-item">
+        <i data-lucide="phone"></i>
+        <span>(19) 98836-2892</span>
+      </div>
+    </div>
+
+    <p class="contato-redes-titulo">Me acompanhe nas redes sociais</p>
+    <div class="redes">
+      <a href="https://github.com/AmosSantos02" target="_blank" class="midia">
+        <img src="/Projeto portifólio/img/Githublogo.jpg" alt="GitHub" />
+        <p>GitHub</p>
+      </a>
+      <a href="https://www.linkedin.com/in/am%C3%B3s-santos-841b32259/" target="_blank" class="midia">
+        <img src="/Projeto portifólio/img/LinkedInlogo.png" alt="LinkedIn" />
+        <p>LinkedIn</p>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Feito com 💙 por Amós Santos</p>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+
+    const cards = document.querySelectorAll(".card_projeto");
+    const overlay = document.getElementById("modal-overlay");
+    const btnFechar = document.getElementById("modal-fechar");
+
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        document.getElementById("modal-img").src = card.dataset.img;
+        document.getElementById("modal-img").alt = card.dataset.titulo;
+        document.getElementById("modal-titulo").textContent = card.dataset.titulo;
+        document.getElementById("modal-descricao").textContent = card.dataset.descricao;
+        document.getElementById("modal-btn").href = card.dataset.github;
+        overlay.classList.add("ativo");
+        document.body.style.overflow = "hidden";
       });
+    });
 
-      function fecharModal() {
-        overlay.classList.remove("ativo");
-        document.body.style.overflow = "";
-      }
+    function fecharModal() {
+      overlay.classList.remove("ativo");
+      document.body.style.overflow = "";
+    }
 
-      btnFechar.addEventListener("click", fecharModal);
+    btnFechar.addEventListener("click", fecharModal);
+    overlay.addEventListener("click", (e) => { if (e.target === overlay) fecharModal(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") fecharModal(); });
+  </script>
+</body>
 
-      overlay.addEventListener("click", (e) => {
-        if (e.target === overlay) fecharModal();
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") fecharModal();
-      });
-    </script>
-  </body>
 </html>
